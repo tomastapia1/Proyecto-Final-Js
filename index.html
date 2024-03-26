@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Juego Memoria</title>
+    
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/stylesLogin.css">
+</head>
+<body>
+    
+    <div id="login-container">
+        <h2>Iniciar Sesión</h2>
+
+        <form action="#" id="login-form">
+            <label for="nombreUsuarioLogin">Usuario:</label>
+            <input type="text" id="nombreUsuarioLogin" name="nombreUsuarioLogin" required>
+
+            <label for="passwordLogin">Contraseña:</label>
+            <input type="password" name="passwordLogin" id="passwordLogin" required>
+
+            <button type="button" id="btnIniciarSesion">Ingresar</button>
+        </form>
+        <p><a href="#" id="linkCrearCuenta">Crear cuenta</a></p>
+    </div>
+
+    <div id="registro-container">
+        <h2>Crear cuenta nueva</h2>
+
+        <form action="#" id="registro-form">
+            <label for="nombreUsuario">*Nombre de usuario:</label>
+            <input type="text" name="nombreUsuario" id="nombreUsuario" required>
+
+            <label for="nuevoEmail">Correo electrónico:</label>
+            <input type="text" name="nuevoEmail" id="nuevoEmail" required>
+
+            <label for="nuevaPassword">*Contraseña:</label>
+            <input type="password" name="nuevaPassword" id="nuevaPassword" required>
+
+            <label for="confirmarPassword">*Repetir contraseña:</label>
+            <input type="password" name="confirmarPassword" id="confirmarPassword" required>
+
+            <button type="button" id="btnCrearCuenta">Crear Cuenta</button>
+        </form>
+        <p><a href="#" id="linkVolverLogin">Iniciar sesión</a></p>
+    </div>
+
+
+    
+
+    <!-- JS -->
+    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

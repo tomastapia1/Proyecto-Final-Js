@@ -1,0 +1,194 @@
+:root {
+    --color-black: #121212;
+    --color-white: #f4f4f4;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    color: var(--color-white);
+
+    background: hsla(195, 86%, 50%, 1);
+    background: linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", endColorstr="#5460F9", GradientType=1 );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-shadow: 0px 0px 5px #0000004c;
+}
+
+/* LOGIN CONTAINER */
+
+#login-container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-black);
+    background-color: var(--color-white);
+    box-shadow: 4px 4px 10px 4px #000;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+
+#login-container p, #registro-container p {
+    text-align: center;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #121212;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+#login-form label {
+    padding: 4px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1.15px;
+}
+
+#login-form input {
+    margin-bottom: 20px;
+    background-color: #969696;
+}
+
+#linkCrearCuenta, #linkVolverLogin {
+    color: #006a84fd;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    transition: color .3s ease-in-out;
+}
+
+#linkCrearCuenta:hover, 
+#linkVolverLogin:hover {
+    color: #410033;
+}
+
+#btnIniciarSesion {
+    background: hsla(195, 86%, 50%, 1);
+    background: linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", endColorstr="#5460F9", GradientType=1 );
+    color: var(--color-white);
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: background .3s ease-in ;
+}
+
+#btnIniciarSesion:hover, #btnIniciarSesion:focus {
+    background: rgb(4, 101, 134);
+    background: linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -webkit-linear-gradient(hsla(236, 93%, 65%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", endColorstr="#5460F9", GradientType=1 );
+    box-shadow:  0 0 15px 0px #00000091;
+}
+
+/* REGISTRO CONTAINER */
+
+#registro-container {
+    width: 25%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-black);
+    background-color: var(--color-white);
+    box-shadow: 4px 4px 10px 4px #000;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+
+#registro-container input {
+    margin-bottom: 20px;
+    background-color: #969696;
+}
+
+#registro-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #121212;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+#registro-form label {
+    padding: 4px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1.15px;
+}
+
+#registro-form input {
+    margin-bottom: 20px;
+    background-color: #969696;
+}
+
+#btnCrearCuenta {
+    background: hsla(195, 86%, 50%, 1);
+    background: linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", endColorstr="#5460F9", GradientType=1 );
+    color: var(--color-white);
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: background-color .3s ease-in ;
+}
+
+#btnCrearCuenta:hover, #btnCrearCuenta:focus {
+    background: rgb(4, 101, 134);
+    background: linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -webkit-linear-gradient(hsla(236, 93%, 65%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", endColorstr="#5460F9", GradientType=1 );
+    box-shadow:  0 0 15px 0px #00000091;
+}
